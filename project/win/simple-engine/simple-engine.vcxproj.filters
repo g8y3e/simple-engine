@@ -19,10 +19,34 @@
     <Filter Include="Header Files\third_party\sdl2">
       <UniqueIdentifier>{55207e08-02e1-436e-9237-8f004cd4c3df}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\simple_base">
+      <UniqueIdentifier>{6e80f62f-d838-4455-ac4f-92d4b5e5d09c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\simple_base\helper">
+      <UniqueIdentifier>{8a2b5b3c-525c-47e5-a8ae-a5e013290c0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\simple_base">
+      <UniqueIdentifier>{9b4ae879-ce78-42a9-aa59-a09875a6910a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\simple_base\helper">
+      <UniqueIdentifier>{c76b999d-0e94-4ef7-a629-cf6baae0670b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\simple_base\helper\log">
+      <UniqueIdentifier>{a37abeb1-6248-4458-8640-1c50a8ba714f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\simple_base\helper\log">
+      <UniqueIdentifier>{11a73eb6-cf2d-4e1d-a9d7-37bf122c89f0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\source\main.cc">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simple_base\game.cc">
+      <Filter>Source Files\simple_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simple_base\helper\log\log.cc">
+      <Filter>Source Files\simple_base\helper\log</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -265,6 +289,12 @@
     </ClInclude>
     <ClInclude Include="..\..\..\source\third_party\sdl2\SDL_video.h">
       <Filter>Header Files\third_party\sdl2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simple_base\game.h">
+      <Filter>Header Files\simple_base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simple_base\helper\log\log.h">
+      <Filter>Header Files\simple_base\helper\log</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

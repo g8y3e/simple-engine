@@ -1,13 +1,9 @@
 #include <iostream>
 
-#include "third_party/sdl2/SDL.h";
+#include <simple_base/game.h>
 
 int main(int argc, char** argv) {
+	simple_engine::Game game("TestGame");
 
-	SDL_Delay(2000);
-
-	std::cout << "Engine initiated!" << std::endl;
-	std::cin.get();
-
-	return 0;
+	return game.run();
 }

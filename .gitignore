@@ -59,6 +59,8 @@ ipch/
 
 # Others
 ClientBin/
+
+
 ~$*
 *~
 *.dbmdl
@@ -70,3 +72,5 @@ orleans.codegen.cs
 
 // sdl2 source
 lib/SDL2
+project/win/simple-engine/Debug
+project/win/simple-engine/Release

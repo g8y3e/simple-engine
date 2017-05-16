@@ -150,8 +150,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\source\main.cc" />
+    <ClCompile Include="..\..\..\source\simple_base\game.cc" />
+    <ClCompile Include="..\..\..\source\simple_base\helper\log\log.cc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\source\simple_base\game.h" />
+    <ClInclude Include="..\..\..\source\simple_base\helper\log\log.h" />
     <ClInclude Include="..\..\..\source\third_party\sdl2\begin_code.h" />
     <ClInclude Include="..\..\..\source\third_party\sdl2\close_code.h" />
     <ClInclude Include="..\..\..\source\third_party\sdl2\SDL.h" />
