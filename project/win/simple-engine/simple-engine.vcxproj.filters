@@ -19,34 +19,58 @@
     <Filter Include="Header Files\third_party\sdl2">
       <UniqueIdentifier>{55207e08-02e1-436e-9237-8f004cd4c3df}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\simple_base">
+    <Filter Include="Header Files\test_game">
+      <UniqueIdentifier>{5f34d83a-7453-4a43-963b-8ce31561f947}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\test_game">
+      <UniqueIdentifier>{65586d44-4ce8-49f8-a8f8-7782d3480ab2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\simple_engine">
       <UniqueIdentifier>{6e80f62f-d838-4455-ac4f-92d4b5e5d09c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\simple_base\helper">
+    <Filter Include="Header Files\simple_engine\helper">
       <UniqueIdentifier>{8a2b5b3c-525c-47e5-a8ae-a5e013290c0e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\simple_base">
-      <UniqueIdentifier>{9b4ae879-ce78-42a9-aa59-a09875a6910a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\simple_base\helper">
-      <UniqueIdentifier>{c76b999d-0e94-4ef7-a629-cf6baae0670b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\simple_base\helper\log">
+    <Filter Include="Header Files\simple_engine\helper\log">
       <UniqueIdentifier>{a37abeb1-6248-4458-8640-1c50a8ba714f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\simple_base\helper\log">
+    <Filter Include="Header Files\simple_engine\render">
+      <UniqueIdentifier>{d8c71687-7312-409a-bee3-ec7e860b7113}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\simple_engine">
+      <UniqueIdentifier>{9b4ae879-ce78-42a9-aa59-a09875a6910a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\simple_engine\helper">
+      <UniqueIdentifier>{c76b999d-0e94-4ef7-a629-cf6baae0670b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\simple_engine\helper\log">
       <UniqueIdentifier>{11a73eb6-cf2d-4e1d-a9d7-37bf122c89f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\simple_engine\render">
+      <UniqueIdentifier>{1599507d-88fc-4e1e-98f7-a3ca00a15fc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\simple_engine\define">
+      <UniqueIdentifier>{a74db57c-20cb-4cdd-8404-a4605ee3d18f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\source\main.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\source\simple_base\game.cc">
-      <Filter>Source Files\simple_base</Filter>
+    <ClCompile Include="..\..\..\source\simple_engine\helper\log\log.cc">
+      <Filter>Source Files\simple_engine\helper\log</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\source\simple_base\helper\log\log.cc">
-      <Filter>Source Files\simple_base\helper\log</Filter>
+    <ClCompile Include="..\..\..\source\simple_engine\render\render.cc">
+      <Filter>Source Files\simple_engine\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simple_engine\game.cc">
+      <Filter>Source Files\simple_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\test_game\test_game.cc">
+      <Filter>Source Files\test_game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simple_engine\config.cc">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -290,11 +314,26 @@
     <ClInclude Include="..\..\..\source\third_party\sdl2\SDL_video.h">
       <Filter>Header Files\third_party\sdl2</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\source\simple_base\game.h">
-      <Filter>Header Files\simple_base</Filter>
+    <ClInclude Include="..\..\..\source\test_game\test_game.h">
+      <Filter>Header Files\test_game</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\source\simple_base\helper\log\log.h">
-      <Filter>Header Files\simple_base\helper\log</Filter>
+    <ClInclude Include="..\..\..\source\simple_engine\game.h">
+      <Filter>Header Files\simple_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simple_engine\helper\log\log.h">
+      <Filter>Header Files\simple_engine\helper\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simple_engine\render\render.h">
+      <Filter>Header Files\simple_engine\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simple_engine\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simple_engine\define\system_define.h">
+      <Filter>Header Files\simple_engine\define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simple_engine\helper\helper_function.h">
+      <Filter>Header Files\simple_engine\helper</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

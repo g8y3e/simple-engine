@@ -4,12 +4,13 @@
 
 #include <third_party/sdl2/SDL.h>
 
-#include "helper/log/log.h";
+#include "helper/log/log.h"
 
 namespace simple_engine {
-	Game::Game(const std::string& name) 
-		: name_(name) {
+	void Game::init() {
+		render_->init();
 	}
+
 
 	int Game::run() {
 		helper::Logger::getInstance().info("Game initialized!");

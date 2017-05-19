@@ -1,9 +1,10 @@
 #include <iostream>
 
-#include <simple_base/game.h>
+#include <test_game/test_game.h>
 
 int main(int argc, char** argv) {
-	simple_engine::Game game("TestGame");
+	test_game::TestGame game;
+	game.init();
 
 	return game.run();
 }
