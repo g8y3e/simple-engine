@@ -12,6 +12,8 @@ namespace test_game {
 
 		config->addStr("name", "Test name!");
 
+		config->addInt("static_frame_rate", 60);
+
 		simple_engine::Config::getInstance(config);
 
 		render_.reset(new simple_engine::Render());

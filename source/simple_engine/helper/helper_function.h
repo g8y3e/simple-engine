@@ -2,6 +2,10 @@
 
 #include <string>
 
+
+
+#include "../define/system_define.h"
+
 namespace simple_engine {
 	namespace helper {
 		template <typename... Args>
@@ -9,8 +13,7 @@ namespace simple_engine {
 			return value + StrConcat(args...);
 		}
 
-		const std::string& StrConcat(const std::string& value) {
-			return value;
-		}
+		const std::string& StrConcat(const std::string& value);
+		ulong GetCurrentTime();
 	}
 }

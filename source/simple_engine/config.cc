@@ -1,18 +1,24 @@
 #include "config.h"
 
-#include <memory>
 
 #include "helper/log/log.h"
 #include "helper/helper_function.h"
 
 namespace simple_engine {
-	Config &Config::getInstance(Config* config) {
-		static std::unique_ptr<Config> config_instance;
-		if (config != nullptr) {
-			config_instance.reset(config);
+	std::unique_ptr<Config> Config::config_instance_(nullptr);
+	
+	Config& Config::initInstance(Config* config) {
+		config_instance_.reset(config);
+
+		return *config_instance_;
+	}
+
+	Config& Config::getInstance() {
+		if (config_instance_ == nullptr) {
+			helper::Logger::getInstance().error("Please init game before!");
 		}
 
-		return *config_instance;
+		return *config_instance_;
 	}
 
 	void Config::addBool(const std::string& key, bool value) {

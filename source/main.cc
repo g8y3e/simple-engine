@@ -1,9 +1,21 @@
 #include <iostream>
 
-#include <test_game/test_game.h>
+#include "simple_engine/config.h"
+#include "simple_engine/game.h"
 
 int main(int argc, char** argv) {
-	test_game::TestGame game;
+	simple_engine::Config *config = new simple_engine::Config();
+	config->addInt("width", 1024);
+	config->addInt("height", 768);
+
+	config->addBool("fullscreen", false);
+
+	config->addStr("name", "Test name!");
+
+	config->addInt("static_frame_rate", 60);
+	simple_engine::Config::initInstance(config);
+
+	simple_engine::Game &game = simple_engine::Game::initInstance();
 	game.init();
 
 	return game.run();

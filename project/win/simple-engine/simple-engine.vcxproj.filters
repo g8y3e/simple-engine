@@ -52,6 +52,12 @@
     <Filter Include="Header Files\simple_engine\define">
       <UniqueIdentifier>{a74db57c-20cb-4cdd-8404-a4605ee3d18f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\simple_engine\event">
+      <UniqueIdentifier>{6c518b0b-ae33-44bc-911e-7dccdcf53bff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\simple_engine\event">
+      <UniqueIdentifier>{09479372-3723-4535-9a58-d042b1c4b3e5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\source\main.cc">
@@ -66,11 +72,14 @@
     <ClCompile Include="..\..\..\source\simple_engine\game.cc">
       <Filter>Source Files\simple_engine</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\source\test_game\test_game.cc">
-      <Filter>Source Files\test_game</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\source\simple_engine\config.cc">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\simple_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simple_engine\helper\helper_function.cc">
+      <Filter>Source Files\simple_engine\helper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simple_engine\event\event_manager.cc">
+      <Filter>Source Files\simple_engine\event</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -314,9 +323,6 @@
     <ClInclude Include="..\..\..\source\third_party\sdl2\SDL_video.h">
       <Filter>Header Files\third_party\sdl2</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\source\test_game\test_game.h">
-      <Filter>Header Files\test_game</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\source\simple_engine\game.h">
       <Filter>Header Files\simple_engine</Filter>
     </ClInclude>
@@ -326,14 +332,17 @@
     <ClInclude Include="..\..\..\source\simple_engine\render\render.h">
       <Filter>Header Files\simple_engine\render</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\source\simple_engine\config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\source\simple_engine\define\system_define.h">
       <Filter>Header Files\simple_engine\define</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\source\simple_engine\helper\helper_function.h">
       <Filter>Header Files\simple_engine\helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simple_engine\config.h">
+      <Filter>Header Files\simple_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simple_engine\event\event_manager.h">
+      <Filter>Header Files\simple_engine\event</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -2,11 +2,13 @@
 
 #include <string>
 #include <map>
+#include <memory>
 
 namespace simple_engine {
 	class Config {
 	public:
-		static Config &getInstance(Config *config = nullptr);
+		static Config& initInstance(Config* config = nullptr);
+		static Config& getInstance();
 
 	public:
 		void addInt(const std::string& key, int value);
@@ -17,6 +19,9 @@ namespace simple_engine {
 		const bool getBool(const std::string& key);
 		int getInt(const std::string& key);
 
+	private:
+		static std::unique_ptr<Config> config_instance_;
+	
 	private:
 		std::map<std::string, int> int_values_;
 		std::map<std::string, bool> bool_values_;
