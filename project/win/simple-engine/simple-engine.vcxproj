@@ -95,7 +95,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;winmm.lib;version.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;winmm.lib;version.lib;imm32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -156,6 +156,11 @@
     <ClCompile Include="..\..\..\source\simple_engine\helper\helper_function.cc" />
     <ClCompile Include="..\..\..\source\simple_engine\helper\log\log.cc" />
     <ClCompile Include="..\..\..\source\simple_engine\render\render.cc" />
+    <ClCompile Include="..\..\..\source\simple_engine\screen\scene\scene.cc" />
+    <ClCompile Include="..\..\..\source\simple_engine\screen\screen.cc" />
+    <ClCompile Include="..\..\..\source\simple_engine\screen\screen_manager.cc" />
+    <ClCompile Include="..\..\..\source\test_game\screen\test_game_screen_manager.cc" />
+    <ClCompile Include="..\..\..\source\test_game\screen\test_screen\test_game_screen.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\source\simple_engine\config.h" />
@@ -164,7 +169,14 @@
     <ClInclude Include="..\..\..\source\simple_engine\game.h" />
     <ClInclude Include="..\..\..\source\simple_engine\helper\helper_function.h" />
     <ClInclude Include="..\..\..\source\simple_engine\helper\log\log.h" />
+    <ClInclude Include="..\..\..\source\simple_engine\opengl.h" />
     <ClInclude Include="..\..\..\source\simple_engine\render\render.h" />
+    <ClInclude Include="..\..\..\source\simple_engine\screen\scene\scene.h" />
+    <ClInclude Include="..\..\..\source\simple_engine\screen\screen.h" />
+    <ClInclude Include="..\..\..\source\simple_engine\screen\screen_manager.h" />
+    <ClInclude Include="..\..\..\source\test_game\screen\test_game_screen_manager.h" />
+    <ClInclude Include="..\..\..\source\test_game\screen\test_screen\scene\test_game_scene.h" />
+    <ClInclude Include="..\..\..\source\test_game\screen\test_screen\test_game_screen.h" />
     <ClInclude Include="..\..\..\source\third_party\sdl2\begin_code.h" />
     <ClInclude Include="..\..\..\source\third_party\sdl2\close_code.h" />
     <ClInclude Include="..\..\..\source\third_party\sdl2\SDL.h" />

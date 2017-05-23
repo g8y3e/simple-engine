@@ -58,6 +58,33 @@
     <Filter Include="Source Files\simple_engine\event">
       <UniqueIdentifier>{09479372-3723-4535-9a58-d042b1c4b3e5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\simple_engine\screen">
+      <UniqueIdentifier>{54ba91be-001c-416d-87d1-4765cbe14063}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\simple_engine\screen">
+      <UniqueIdentifier>{f9c0ea73-b275-45b0-8d26-bc73520854ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\simple_engine\screen\scene">
+      <UniqueIdentifier>{42b8cff6-0691-4c91-8488-5645e0946ee9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\simple_engine\screen\scene">
+      <UniqueIdentifier>{9fe60d21-63a4-4f44-95e3-f8de62abe6fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\test_game\screen">
+      <UniqueIdentifier>{4bb53d7e-3b70-42d8-816a-7edfe3e0f19c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\test_game\screen\test_screen">
+      <UniqueIdentifier>{52625b5c-fd93-4ba4-aefa-5283f4210c5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\test_game\screen">
+      <UniqueIdentifier>{7fd78970-a5af-4b46-a7ef-97c0b229d8e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\test_game\screen\test_screen">
+      <UniqueIdentifier>{4789b44d-0640-4b1a-9d3f-72a4b46ee22d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\test_game\screen\test_screen\scene">
+      <UniqueIdentifier>{c95ebfe6-524b-4cc8-9584-6a1430744817}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\source\main.cc">
@@ -80,6 +107,21 @@
     </ClCompile>
     <ClCompile Include="..\..\..\source\simple_engine\event\event_manager.cc">
       <Filter>Source Files\simple_engine\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simple_engine\screen\screen.cc">
+      <Filter>Source Files\simple_engine\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simple_engine\screen\screen_manager.cc">
+      <Filter>Source Files\simple_engine\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simple_engine\screen\scene\scene.cc">
+      <Filter>Source Files\simple_engine\screen\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\test_game\screen\test_game_screen_manager.cc">
+      <Filter>Source Files\test_game\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\test_game\screen\test_screen\test_game_screen.cc">
+      <Filter>Source Files\test_game\screen\test_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -343,6 +385,27 @@
     </ClInclude>
     <ClInclude Include="..\..\..\source\simple_engine\event\event_manager.h">
       <Filter>Header Files\simple_engine\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simple_engine\screen\screen.h">
+      <Filter>Header Files\simple_engine\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simple_engine\opengl.h">
+      <Filter>Header Files\simple_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simple_engine\screen\screen_manager.h">
+      <Filter>Header Files\simple_engine\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simple_engine\screen\scene\scene.h">
+      <Filter>Header Files\simple_engine\screen\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\test_game\screen\test_game_screen_manager.h">
+      <Filter>Header Files\test_game\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\test_game\screen\test_screen\test_game_screen.h">
+      <Filter>Header Files\test_game\screen\test_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\test_game\screen\test_screen\scene\test_game_scene.h">
+      <Filter>Header Files\test_game\screen\test_screen\scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

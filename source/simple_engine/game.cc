@@ -12,7 +12,11 @@
 namespace simple_engine {
 	std::unique_ptr<Game> Game::game_instance_(nullptr);
 	
-	Game &Game::initInstance(Render* render, EventManager* event_manager) {
+	Game &Game::initInstance(ScreenManager* screen_manager, Render* render, EventManager* event_manager) {
+		if (screen_manager == nullptr) {
+			screen_manager = new ScreenManager();
+		}
+
 		if (render == nullptr) {
 			render = new Render();
 		}
@@ -21,7 +25,7 @@ namespace simple_engine {
 			event_manager = new EventManager();
 		}
 
-		Game *game = new Game(render, event_manager);
+		Game *game = new Game(screen_manager, render, event_manager);
 
 		game_instance_.reset(game);
 
@@ -36,8 +40,10 @@ namespace simple_engine {
 		return *game_instance_;
 	}
 
-	Game::Game(Render* render, EventManager* event_manager)
+	Game::Game(ScreenManager* screen_manager, Render* render, EventManager* event_manager)
 		: is_running_(true) {
+
+		screen_manager_.reset(screen_manager);
 
 		render_.reset(render);
 		event_manager_.reset(event_manager);
@@ -61,6 +67,7 @@ namespace simple_engine {
 
 		while(is_running_) {
 			event_manager_->handleEvent();
+			render_->draw(screen_manager_->getCurrentScreen());
 
 			current_time = helper::GetCurrentTime();
 

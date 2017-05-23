@@ -4,11 +4,13 @@
 
 #include "render/render.h"
 #include "event/event_manager.h"
+#include "screen/screen_manager.h"
 
 namespace simple_engine {
 	class Game {
 	public:
 		static Game& initInstance(
+				ScreenManager* screen_manager = nullptr,
 				Render* render = nullptr, 
 				EventManager* event_manager = nullptr
 			);
@@ -16,7 +18,7 @@ namespace simple_engine {
 		static Game& getInstance();
 
 	public:
-		Game(Render* render, EventManager* event_manager);
+		Game(ScreenManager* screen_manager, Render* render, EventManager* event_manager);
 
 	public:
 		void init();
@@ -28,6 +30,7 @@ namespace simple_engine {
 	protected:
 		std::unique_ptr<Render> render_;
 		std::unique_ptr<EventManager> event_manager_;
+		std::unique_ptr<ScreenManager> screen_manager_;
 
 	private:
 		static std::unique_ptr<Game> game_instance_;

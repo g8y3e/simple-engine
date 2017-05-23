@@ -54,5 +54,16 @@ namespace simple_engine {
 			helper::Logger::getInstance().error(error_msg.append(SDL_GetError()));
 			throw std::exception(error_msg.c_str());
 		}
+
+		context_ = SDL_GL_CreateContext(window_);
+
+		SDL_GL_MakeCurrent(window_, context_);
 	}
+
+	void Render::draw(Screen& screen) {
+		screen.draw();
+
+		SDL_GL_SwapWindow(window_);
+	}
+
 }
